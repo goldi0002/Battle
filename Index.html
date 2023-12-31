@@ -64,6 +64,10 @@
         }
       }
     </style>
+    	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script src="webScripts/Session/UserSession.js"></script>
+      <script src="webScripts/dbQuery.js"></script>
   </head>
   <body>
     <link rel="stylesheet" href="Css/style.css" />
@@ -83,7 +87,7 @@
               </nav>
               <div class="home-buttons">
                 <a
-                  href="https://Account"
+                  href="./Login.html"
                   target="_blank"
                   rel="noreferrer noopener"
                   class="home-login button"
@@ -124,7 +128,7 @@
                 <div class="home-buttons1"></div>
               </div>
               <div class="home-container02">
-                <a href="login.html" class="home-navlink button">Button</a>
+                <a href="./Login.html" class="home-navlink button">Button</a>
                 <button type="button" class="button home-button">Button</button>
               </div>
               <div class="home-icon-group">
@@ -561,7 +565,7 @@
         </div>
         <div class="home-banner">
           <div class="home-banner1">
-            <a href="login.html" class="home-navlink1">
+            <a href="./Login.html" class="home-navlink1">
               <h1 class="home-banner-heading heading2">
                 Join the Photo Battle
               </h1>
@@ -608,74 +612,7 @@
                   </span>
                 </span>
               </div>
-              <div class="home-container33">
-                <div class="question-container question-root-class-name">
-                  <span class="question-text heading4">
-                    <span>What is a photo battle voting system?</span>
-                  </span>
-                  <span class="question-text1">
-                    <span>
-                      A photo battle voting system is a platform where users can
-                      upload their photos and participate in competitions where
-                      other users vote for their favorite photos.
-                    </span>
-                  </span>
-                </div>
-                <div class="question-container">
-                  <span class="question-text heading4">
-                    <span>How does the rewards feature work?</span>
-                  </span>
-                  <span class="question-text1">
-                    <span>
-                      The rewards feature allows users to earn rewards or prizes
-                      for participating in photo battles and achieving certain
-                      milestones, such as winning a certain number of battles or
-                      receiving a high number of votes.
-                    </span>
-                  </span>
-                </div>
-                <div class="question-container">
-                  <span class="question-text heading4">
-                    <span>
-                      Do I need to register to use the photo battle voting
-                      system?
-                    </span>
-                  </span>
-                  <span class="question-text1">
-                    <span>
-                      Yes, you need to register an account in order to upload
-                      your photos, participate in battles, and vote for other
-                      photos.
-                    </span>
-                  </span>
-                </div>
-                <div class="question-container">
-                  <span class="question-text heading4">
-                    <span>Can I login with my social media accounts?</span>
-                  </span>
-                  <span class="question-text1">
-                    <span>
-                      Yes, you can login using your social media accounts such
-                      as Facebook or Google. This provides a convenient way to
-                      access the platform without creating a separate account.
-                    </span>
-                  </span>
-                </div>
-                <div class="question-container">
-                  <span class="question-text heading4">
-                    <span>
-                      How are the winners determined in photo battles?
-                    </span>
-                  </span>
-                  <span class="question-text1">
-                    <span>
-                      The winners in photo battles are determined by the number
-                      of votes received from other users. The photo with the
-                      highest number of votes at the end of the battle is
-                      declared the winner.
-                    </span>
-                  </span>
-                </div>
+              <div class="home-container33" id="Faq_SectionIndex">
               </div>
             </div>
           </div>
@@ -719,5 +656,6 @@
       data-section-id="navbar"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
+    <script src="webScripts/Scripts/Index.js"></script>
   </body>
 </html>
