@@ -1,5 +1,8 @@
 $(document).ready(()=>{
-
+    var IsLoggedIn=SessionHandler.getSession("IsLoggedIn");
+    if(IsLoggedIn==null){
+      window.location.href='./Login.html'
+    }
     const getFaqFromServer = (successCallback,errorCallback) => {
         const url = `https://ytbdhqwafvmhaucvkfwa.supabase.co/rest/v1/a_battle_faqs`;
         ajaxRequest(url, "GET", null, successCallback, errorCallback);
